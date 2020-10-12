@@ -11,11 +11,28 @@ const App = () => {
   const [includeHtml, setIncludeHtml] = useState("Yes");
   const [copiedCode, setCopiedCode] = useState(false);
 
+  useEffect(() => {
+    const url = `https://baconipsum.com/api/?type=all-meat&paras=${inputValue}&start-with-lorem=1`;
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setParagraphs(data));
+  }, []);
+
   return (
     <div className="App">
       <Container>
         <Title />
-        <Options />
+        <Options
+          paragraphs={paragraphs}
+          copiedCode={copiedCode}
+          setCopiedCode={setCopiedCode}
+          setIncludeHtml={includeHtml}
+          includeHtml={includeHtml}
+          setInputValue={setInputValue}
+          tag={tag}
+          setTag={setTag}
+        />
       </Container>
     </div>
   );
