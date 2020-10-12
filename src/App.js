@@ -3,6 +3,7 @@ import "./App.css";
 import Container from "./components/Container";
 import Title from "./components/Title";
 import Options from "./components/Options";
+import Output from "./components/Output";
 
 const App = () => {
   const [paragraphs, setParagraphs] = useState([]);
@@ -27,12 +28,13 @@ const App = () => {
           paragraphs={paragraphs}
           copiedCode={copiedCode}
           setCopiedCode={setCopiedCode}
-          setIncludeHtml={includeHtml}
+          setIncludeHtml={setIncludeHtml}
           includeHtml={includeHtml}
           setInputValue={setInputValue}
           tag={tag}
           setTag={setTag}
         />
+        <Output paragraphs={paragraphs} includeHtml={includeHtml} tag={tag} />
       </Container>
     </div>
   );
