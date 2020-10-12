@@ -13,15 +13,25 @@ const Options = () => {
             <p>Tags:</p>
             <select>
               <option value="p">&lt;p&gt;</option>
-              <option value="h1"></option>
-              <option value="h2"></option>
-              <option value="h3"></option>
-              <option value="h4"></option>
-              <option value="h5"></option>
-              <option value="h6"></option>
-              <option value="span"></option>
+              <option value="h1">&lt;h1&gt;</option>
+              <option value="h2">&lt;h2&gt;</option>
+              <option value="h3">&lt;h3&gt;</option>
+              <option value="h4">&lt;h4&gt;</option>
+              <option value="h5">&lt;h5&gt;</option>
+              <option value="h6">&lt;h6&gt;</option>
+              <option value="span">&lt;span&gt;</option>
             </select>
           </div>
+          <div className="include">
+            <p>Include HTML:</p>
+            <select>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+        <div className="copy">
+          <p>Copy to clipboard</p>
         </div>
       </div>
     </div>
