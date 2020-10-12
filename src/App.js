@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import Container from "./components/Container";
+import Title from "./components/Title";
 
 const App = () => {
   const [paragraphs, setParagraphs] = useState([]);
@@ -10,7 +12,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <Container>
+        <Title />
+      </Container>
     </div>
   );
 };
