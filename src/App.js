@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Container from "./components/Container";
 import Title from "./components/Title";
+import Options from "./components/Options";
 
 const App = () => {
   const [paragraphs, setParagraphs] = useState([]);
@@ -14,6 +15,7 @@ const App = () => {
     <div className="App">
       <Container>
         <Title />
+        <Options />
       </Container>
     </div>
   );
