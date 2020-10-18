@@ -2,6 +2,8 @@
 
 <p align="center">A text generator application</p>
 
+## 🕹 Live Demo: https://quirky-shaw-e8a256.netlify.app/
+
 
 ## 🎮 How to use
 1. Select from paragraph 1-6 of text.
