@@ -2,7 +2,7 @@
 
 <p align="center">A text generator application</p>
 
-## 🕹 Live Demo: https://quirky-shaw-e8a256.netlify.app/
+## 🕹 Live Demo: https://text-generator-app.netlify.app/
 
 
 ## 🎮 How to use
